@@ -1,0 +1,36 @@
+﻿@model ASP.netMVC_SATYAM.Models.Cars   
+
+@{/* This above import is important to tell the view which model is going to be use 
+  And it hold the class - model properties inside it */ }
+
+<h2>Index car Collection</h2>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th scope="col">Id</th>
+            <th scope="col">CarName</th>
+            <th scope="col">Brand</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td>@Model.carID</td>
+            <td>@Model.carName</td>
+            <td>@Model.brand</td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            
+            
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            
+            
+        </tr>
+    </tbody>
+</table>
+
