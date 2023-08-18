@@ -1,0 +1,37 @@
+﻿
+<h2>InlineHtmlHelper example </h2>
+<div>
+    @{ /* Here we write HTML Helper inline type -- 
+       use in single view ,
+       like C# functions which return HTML
+       we can treat it same as C# fuctions and write logit in it */}
+
+    @helper ShowNames(string[] names)
+    { 
+         <h3>The names are as </h3>
+         foreach (string name in names)
+            {
+             <h4> names  -- @name</h4>
+            
+            }
+    }
+
+</div>
+<p> This is sample text </p>
+<h2> Whats are the name person </h2>
+@{ /* calling helper */}
+
+<div>
+    @ShowNames(new string[] { "Satyam", "Atul", "Rushi", "Saurabh" })
+</div>
+<h2> Whats are the name of cars</h2>
+<div>
+    @ShowNames(new string[] { "GTR", "RX", "chalenger", "kai" })
+</div>
+
+
+
+
+
+
+

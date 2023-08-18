@@ -13,5 +13,10 @@ namespace ASP.netMVC_SATYAM.Controllers
         {
             return View();
         }
+
+        public ActionResult InlineHtmlHelper()
+        {
+            return View();
+        }
     }
 }

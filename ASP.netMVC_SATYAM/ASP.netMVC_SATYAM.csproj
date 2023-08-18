@@ -186,6 +186,7 @@
     <Content Include="Views\PracticeView\Index.cshtml" />
     <Content Include="Views\Cars\Index.cshtml" />
     <Content Include="Views\Student\Register.cshtml" />
+    <Content Include="Views\PracticeView\InlineHtmlHelper.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
