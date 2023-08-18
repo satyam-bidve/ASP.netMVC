@@ -1,12 +1,30 @@
-﻿
+﻿@{ /* to add the model using directive as */}
+@using netMVC_SATYAM.Models  @{/* OR*/ }
+@model.ASP.netMVC_SATYAM.Models.Cars
+
+
 @{
-    ViewBag.Title = "Index";
+    bool enable = true;
 }
 
 <h2>This is created by PracticeView </h2>
-@{ /* We can give here a anchor liks to navigate in oage in href - use direct path */}
-@{ /* Any other use we will see it later like use with models  */}
+@{/* We can give here a anchor liks to navigate in oage in href - use direct path */}
+@{/* Any other use we will see it later like use with models  */}
 <a href="/Home/Index">Home</a>
 <a href="/Home/About">About</a>
 <a href="/MyTest/Index">MyTest</a>
+<div>
+     
+    @if (enable == true)
+            {
+                <h3> this text is visible becouse its true </h3>
+            }
+     else if (enable == false)
+            {
+                <h3> this texte </h3>
+            }
+
+</div>
+
+
 

@@ -124,6 +124,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyTestController.cs" />
     <Compile Include="Controllers\PracticeViewController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +185,7 @@
     <Content Include="Views\MyTest\View.cshtml" />
     <Content Include="Views\PracticeView\Index.cshtml" />
     <Content Include="Views\Cars\Index.cshtml" />
+    <Content Include="Views\Student\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
