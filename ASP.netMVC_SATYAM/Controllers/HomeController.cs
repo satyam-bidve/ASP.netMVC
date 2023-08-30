@@ -20,7 +20,7 @@ namespace ASP.netMVC_SATYAM.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ViewResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 

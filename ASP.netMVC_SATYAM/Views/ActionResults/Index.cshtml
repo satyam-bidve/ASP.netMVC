@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index - Types of Action Result types </h2>
+<hr />
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Type</th>
+            <th scope="col">Demo</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>ViewResult</td>
+            <td><a href="/ActionResults/ForView">Demo of Viewresult</a></td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Emptyresult</td>
+            <td><a href="/ActionResults/ForEmpty">Demo of Viewresult</a></td>
+
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>ContentResult </td>
+            <td><a href="/ActionResults/ForContentResult">Demo of ContentResult Method</a></td>
+
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>FileResult </td>
+            <td><a href="/ActionResults/ForDownloadFile">Demo of FileResult Method</a></td>
+
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>RedirectResult </td>
+            <td><a href="/ActionResults/ForRedirectResult">Demo of RedirectResult Method</a></td>
+
+        </tr>
+
+        <tr>
+            <th scope="row">6</th>
+            <td>JavaScriptResult </td>
+            <td>
+                <a href="/ActionResults/ForJavaScriptResult">Get Js Code </a>
+                <button id="submit" class="manoj mx-2 btn-primary bg-light">Try From Server</button>
+                <div style="display:none; border:1px solid green;" id="imgIcon">
+                    <img src="/favicon.ico" />
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $("#submit").click(function () {
+                           
+                            $.getScript("/ActionResults/ForJavaScriptResult");
+                        });
+                    });
+                </script>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+

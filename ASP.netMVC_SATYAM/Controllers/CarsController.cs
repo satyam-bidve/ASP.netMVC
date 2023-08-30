@@ -21,6 +21,10 @@ namespace ASP.netMVC_SATYAM.Controllers
         // view as responce 
         private Cars GetCars()
         {
+
+            // data base connection 
+            // con . get 
+           //
             return new Cars()
             {
                 carID = 101,
